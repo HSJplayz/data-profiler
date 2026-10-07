@@ -1,0 +1,295 @@
+{
+  "overview": {
+    "rows": 12,
+    "columns": 6,
+    "kinds": {
+      "categorical": 2,
+      "number": 4
+    },
+    "memory_bytes": 1827,
+    "memory_mb": 0.0,
+    "duplicate_rows": 0,
+    "total_missing": 0,
+    "missing_pct": 0.0,
+    "numeric_columns": 4
+  },
+  "columns": [
+    {
+      "name": "city",
+      "kind": "categorical",
+      "dtype": "object",
+      "count": 12,
+      "missing": 0,
+      "missing_pct": 0.0,
+      "unique": 12,
+      "unique_pct": 100.0,
+      "constant": false,
+      "id_like": false,
+      "categorical": {
+        "count": 12,
+        "unique": 12,
+        "top": [
+          {
+            "value": "Mumbai",
+            "count": 1,
+            "pct": 8.3
+          },
+          {
+            "value": "Delhi",
+            "count": 1,
+            "pct": 8.3
+          },
+          {
+            "value": "Kolkata",
+            "count": 1,
+            "pct": 8.3
+          },
+          {
+            "value": "Chennai",
+            "count": 1,
+            "pct": 8.3
+          },
+          {
+            "value": "Pune",
+            "count": 1,
+            "pct": 8.3
+          }
+        ],
+        "entropy": 3.585
+      }
+    },
+    {
+      "name": "population",
+      "kind": "number",
+      "dtype": "int64",
+      "count": 12,
+      "missing": 0,
+      "missing_pct": 0.0,
+      "unique": 12,
+      "unique_pct": 100.0,
+      "constant": false,
+      "id_like": false,
+      "numeric": {
+        "count": 12,
+        "mean": 7306365.083333333,
+        "median": 5770463.5,
+        "std": 5634806.884176607,
+        "min": 2845000.0,
+        "max": 20411000.0,
+        "q1": 3111681.75,
+        "q3": 7426918.75,
+        "iqr": 4315237.0,
+        "zeros": 0,
+        "negatives": 0,
+        "outliers": 2,
+        "skew": 1.683
+      }
+    },
+    {
+      "name": "area_km2",
+      "kind": "number",
+      "dtype": "int64",
+      "count": 12,
+      "missing": 0,
+      "missing_pct": 0.0,
+      "unique": 12,
+      "unique_pct": 100.0,
+      "constant": false,
+      "id_like": false,
+      "numeric": {
+        "count": 12,
+        "mean": 539.6666666666666,
+        "median": 455.5,
+        "std": 331.6573624399224,
+        "min": 205.0,
+        "max": 1484.0,
+        "q1": 344.5,
+        "q3": 614.75,
+        "iqr": 270.25,
+        "zeros": 0,
+        "negatives": 0,
+        "outliers": 1,
+        "skew": 2.336
+      }
+    },
+    {
+      "name": "unemployment_pct",
+      "kind": "number",
+      "dtype": "float64",
+      "count": 12,
+      "missing": 0,
+      "missing_pct": 0.0,
+      "unique": 12,
+      "unique_pct": 100.0,
+      "constant": false,
+      "id_like": false,
+      "numeric": {
+        "count": 12,
+        "mean": 5.949999999999999,
+        "median": 5.949999999999999,
+        "std": 0.947244808522447,
+        "min": 4.5,
+        "max": 7.4,
+        "q1": 5.15,
+        "q3": 6.675,
+        "iqr": 1.5249999999999995,
+        "zeros": 0,
+        "negatives": 0,
+        "outliers": 0,
+        "skew": 0.028
+      }
+    },
+    {
+      "name": "year",
+      "kind": "number",
+      "dtype": "int64",
+      "count": 12,
+      "missing": 0,
+      "missing_pct": 0.0,
+      "unique": 1,
+      "unique_pct": 8.33,
+      "constant": true,
+      "id_like": false,
+      "numeric": {
+        "count": 12,
+        "mean": 2024.0,
+        "median": 2024.0,
+        "std": 0.0,
+        "min": 2024.0,
+        "max": 2024.0,
+        "q1": 2024.0,
+        "q3": 2024.0,
+        "iqr": 0.0,
+        "zeros": 0,
+        "negatives": 0,
+        "outliers": 0,
+        "skew": 0.0
+      }
+    },
+    {
+      "name": "region",
+      "kind": "categorical",
+      "dtype": "object",
+      "count": 12,
+      "missing": 0,
+      "missing_pct": 0.0,
+      "unique": 4,
+      "unique_pct": 33.33,
+      "constant": false,
+      "id_like": false,
+      "categorical": {
+        "count": 12,
+        "unique": 4,
+        "top": [
+          {
+            "value": "West",
+            "count": 4,
+            "pct": 33.3
+          },
+          {
+            "value": "North",
+            "count": 4,
+            "pct": 33.3
+          },
+          {
+            "value": "South",
+            "count": 3,
+            "pct": 25.0
+          },
+          {
+            "value": "East",
+            "count": 1,
+            "pct": 8.3
+          }
+        ],
+        "entropy": 1.855
+      }
+    }
+  ],
+  "correlations": {
+    "labels": [
+      "population",
+      "area_km2",
+      "unemployment_pct",
+      "year"
+    ],
+    "matrix": [
+      [
+        1.0,
+        0.67,
+        0.222,
+        0.0
+      ],
+      [
+        0.67,
+        1.0,
+        0.458,
+        0.0
+      ],
+      [
+        0.222,
+        0.458,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "pairs": [
+      {
+        "a": "population",
+        "b": "area_km2",
+        "r": 0.67,
+        "strength": "moderate"
+      },
+      {
+        "a": "area_km2",
+        "b": "unemployment_pct",
+        "r": 0.458,
+        "strength": "moderate"
+      },
+      {
+        "a": "population",
+        "b": "unemployment_pct",
+        "r": 0.222,
+        "strength": "weak"
+      }
+    ]
+  },
+  "alerts": [
+    {
+      "level": "high",
+      "column": "year",
+      "code": "constant",
+      "message": "'year' has a single constant value."
+    },
+    {
+      "level": "medium",
+      "column": "population",
+      "code": "skewed",
+      "message": "'population' is heavily right-skewed (skew=1.683); consider a log/box-cox transform."
+    },
+    {
+      "level": "medium",
+      "column": "area_km2",
+      "code": "skewed",
+      "message": "'area_km2' is heavily right-skewed (skew=2.336); consider a log/box-cox transform."
+    },
+    {
+      "level": "low",
+      "column": "population",
+      "code": "outliers",
+      "message": "'population' has 2 IQR outlier(s) outside [3111681.75, 7426918.75]."
+    },
+    {
+      "level": "low",
+      "column": "area_km2",
+      "code": "outliers",
+      "message": "'area_km2' has 1 IQR outlier(s) outside [344.50, 614.75]."
+    }
+  ]
+}
